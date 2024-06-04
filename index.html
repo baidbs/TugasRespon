@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center;">APLIKASI NILAI ACHMAD BAIHAQI</h1>
+    <hr>
+    <div class="input">
+      <label>NIM </label>
+      <input id="nim" type="text" class="form-control" placeholder="masukkan nim" required>
+      <br>
+      <label>NAMA </label>
+      <input id="nama" type="text" class="form-control" placeholder="masukkan nama" required>
+    </div>
+    <br><br>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Nilai Teori</h5>
+          
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">PRESENSI</label>
+              <input id="presensi" type="text" class="form-control">
+              <label for="exampleInputPassword1" class="form-label">TUGAS</label>
+              <input id="tugas" type="text" class="form-control">
+              <label for="exampleInputPassword1" class="form-label">UTS</label>
+              <input id="uts" type="text" class="form-control">
+              <label for="exampleInputPassword1" class="form-label">UAS</label>
+              <input id="uas" type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Nilai Praktek</h5>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">PRESENSI</label>
+              <input id="presensi2" type="text" class="form-control">
+              <label for="exampleInputPassword1" class="form-label">TUGAS</label>
+              <input id="tugas2" type="text" class="form-control">
+              <label for="exampleInputPassword1" class="form-label">UTS</label>
+              <input id="uts2" type="text" class="form-control">
+              <label for="exampleInputPassword1" class="form-label">UAS</label>
+              <input id="uas2" type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <button id="simpan" class="btn btn-primary">SIMPAN</button>
+    <button id="batal" class="btn btn-danger">BATAL</button>
+    <hr>
+
+
+    <P>Rincian Nilai</P>
+    <table id="nilai-table" class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">NIM</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Presensi</th>
+          <th scope="col">Tugas</th>
+          <th scope="col">UTS</th>
+          <th scope="col">UAS</th>
+          <th scope="col">Nilai Akhir</th>
+          <th scope="col">Grade</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+      
+      </tbody>
+    </table>
+    <br>
+    <button id="reset" type="button" class="btn btn-warning">Reset</button>
+    </div>
+
+
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

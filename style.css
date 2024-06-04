@@ -1,0 +1,14 @@
+.card-title {
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    position: relative;
+    bottom: -12px;
+}
+
+.input .form-control {
+    width: 20%;
+}
