@@ -21,7 +21,7 @@ function hitungNilaiAkhir(presensi, tugas, uts, uas, presensi2, tugas2, uts2, ua
   const utsTotal = (uts + uts2) / 2;
   const uasTotal = (uas + uas2) / 2;
 
-  const nilaiAkhir = (presensiTotal * 0.1) + (tugasTotal * 0.3) + (utsTotal * 0.3) + (uasTotal * 0.3);
+  const nilaiAkhir = ((presensiTotal / 14 * 100) * 0.1) + (tugasTotal * 0.3) + (utsTotal * 0.3) + (uasTotal * 0.3);
   return nilaiAkhir;
 }
 
