@@ -15,7 +15,7 @@ h1 {
 
 @media (max-width: 767px) {
 
-  .table .table-striped .table-hover {
+  .table {
       overflow-x: auto;
       width: 100%;
       display: block;
