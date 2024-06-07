@@ -65,7 +65,28 @@ function renderNilaiTable() {
   });
 }
 
+function validateForm() {
+  const nim = nimInput.value.trim();
+  const nama = namaInput.value.trim();
+  const presensi = parseFloat(presensiInput.value);
+  const tugas = parseFloat(tugasInput.value);
+  const uts = parseFloat(utsInput.value);
+  const uas = parseFloat(uasInput.value);
+  const presensi2 = parseFloat(presensi2Input.value);
+  const tugas2 = parseFloat(tugas2Input.value);
+  const uts2 = parseFloat(uts2Input.value);
+  const uas2 = parseFloat(uas2Input.value);
+
+  if (!nim || !nama || isNaN(presensi) || isNaN(tugas) || isNaN(uts) || isNaN(uas) || isNaN(presensi2) || isNaN(tugas2) || isNaN(uts2) || isNaN(uas2)) {
+    alert('mohon untuk diisi semua ya banggr! 🙏');
+    return false;
+  }
+
+  return true;
+}
+
 simpanButton.addEventListener('click', () => {
+  if (validateForm()) {
   const nim = nimInput.value;
   const nama = namaInput.value;
   const presensi = parseFloat(presensiInput.value);
@@ -109,6 +130,7 @@ simpanButton.addEventListener('click', () => {
   tugas2Input.value = '';
   uas2Input.value = '';
   uts2Input.value = '';
+  }
 });
 
 batalButton.addEventListener('click', () => {
