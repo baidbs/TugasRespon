@@ -12,13 +12,3 @@ h1 {
 .input .form-control {
     width: 20%;
 }
-
-@media (max-width: 767px) {
-
-  .table {
-      overflow-x: auto;
-      width: 100%;
-      display: block;
-      overflow-x: auto;
-  }
-}
