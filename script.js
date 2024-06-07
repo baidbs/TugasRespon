@@ -27,7 +27,6 @@ function hitungNilaiAkhir(presensi, tugas, uts, uas, presensi2, tugas2, uts2, ua
   if (!nim || !nama || !presensi || !tugas || !uts || !uas ||
                 !presensi2 || !tugas2 || !uts2 || !uas2) {
                 alert('mohon diisi semua 🙏');
-                return;
 }
 
 function getGrade(nilaiAkhir) {
