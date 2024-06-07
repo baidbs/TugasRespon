@@ -15,11 +15,8 @@ h1 {
 
 @media (max-width: 767px) {
 
-  .table {
+  table {
       overflow-x: auto;
-  }
-
-  .table {
       width: 100%;
       display: block;
       overflow-x: auto;
